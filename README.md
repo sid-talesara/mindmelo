@@ -64,7 +64,7 @@ Make sure you have the following installed on your computer:
 
 ## Contribute
 
-We welcome contributions to MindMelo. Before making a contribution, please review the [Contribution Guide](https://github.com/sid-talesara/mindmelo/blob/main/CONTRIBUTING.md).
+We welcome contributions to MindMelo. Before making a contribution, please review the [Contribution Guide](https://github.com/sid-talesara/mindmelo/blob/master/CONTRIBUTING.md).
 
 ## Issues
 
