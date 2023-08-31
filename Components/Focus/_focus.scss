@@ -1,0 +1,105 @@
+.focus {
+  width: 30rem;
+  height: 5rem;
+  position: relative;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(3px);
+  &-wrapper {
+    color: $color-white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+}
+.timer,
+.stopwatch {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 2rem;
+  gap: 1rem;
+}
+.running-time {
+  font-size: 2rem;
+  width: 12rem;
+}
+.start-stop-btn-grp {
+  display: flex;
+  gap: 1rem;
+  padding-right: 2rem;
+  border-right: 1px solid #33333340;
+}
+.start-pause-btn,
+.stop-btn {
+  color: $color-white;
+  font-size: 2rem;
+}
+
+.timer-stopwatch-toggle-btn,
+.bell-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5rem;
+  font-size: 1.5rem;
+  color: $color-white;
+}
+
+.bell-btn {
+  right: 2rem;
+  font-size: 2rem;
+}
+
+.custom-timer {
+  width: 10rem;
+  text-align: center;
+  font-size: 1.4rem;
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(0px);
+}
+
+@include respond(tab-pot) {
+  .focus {
+    width: 40rem;
+
+    height: 8rem;
+
+    &-wrapper {
+      position: static;
+      display: flex;
+      justify-content: center;
+      margin: 3rem 0rem;
+    }
+  }
+
+  .running-time {
+    font-size: 3rem;
+    width: 15rem;
+  }
+  .start-pause-btn,
+  .stop-btn {
+    font-size: 3rem;
+  }
+
+  .timer-stopwatch-toggle-btn,
+  .bell-btn {
+    font-size: 2.5rem;
+    right: 6rem;
+  }
+
+  .bell-btn {
+    right: 2rem;
+    font-size: 3rem;
+  }
+
+  .custom-timer {
+    width: 13rem;
+  }
+}

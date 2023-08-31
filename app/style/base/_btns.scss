@@ -1,0 +1,60 @@
+.btn {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+  text-transform: capitalize;
+  &:focus {
+    outline: none;
+  }
+}
+
+.try-for-free--btn {
+  color: $color-white;
+  background-color: $color-black;
+  width: 30rem;
+  height: 5rem;
+  font-size: 2.2rem;
+  padding: 1.4rem 5.4rem;
+  border-radius: 1.2rem;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 300ms;
+  &:hover {
+    background-color: #5d7ae1;
+    box-shadow: 2px -2px 15px 5px rgba(0, 0, 0, 0.13);
+  }
+}
+.close-modal--btn {
+  color: $color-black;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  height: 2rem;
+  width: 2rem;
+}
+.social--btn {
+  padding: 1rem 1rem;
+  border: 1px solid $color-black;
+  margin: 1rem;
+  color: $color-black;
+  border-radius: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.feedback--btn {
+  background-color: $color-black;
+  color: $color-white;
+}
+
+@include respond(tab-pot) {
+  .logo-on-btn-try-for-free {
+    width: auto;
+    height: 4rem;
+    padding: 0rem 1rem;
+  }
+}

@@ -1,0 +1,100 @@
+.todo {
+  // todo-form
+  &-form {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 0rem;
+      font-size: 1.8rem;
+      gap: 2rem;
+    }
+    &-input {
+      background-color: transparent;
+      border: none;
+      width: 80%;
+      padding: 1rem;
+      border-bottom: 1px solid $color-black;
+      &::placeholder {
+        color: $color-black;
+      }
+    }
+    &-addBtn {
+      font-size: 2rem;
+    }
+  }
+  // todo-list
+  &-list {
+    padding: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  // todo-item
+  &-item {
+    width: 80%;
+    text-align: left;
+    &-wrapper {
+      width: 90%;
+      word-wrap: break-word;
+      height: auto;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin: auto;
+    }
+    &-left,
+    &-right {
+      display: flex;
+    }
+
+    // toDo options  (check-edit-delete)
+    &-options--btn {
+      padding-right: 1rem;
+      font-size: 2rem;
+    }
+
+    // Todo-edit form
+    &-edit {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      &-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        width: 100%;
+      }
+      &-input {
+        background-color: transparent;
+        border: none;
+        width: 80%;
+        padding: 1rem;
+        border-bottom: 1px solid $color-black;
+        &::placeholder {
+          color: $color-black;
+        }
+      }
+      &--btn {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+.check {
+  text-decoration: line-through;
+}
+
+@include respond(tab-pot) {
+  .todo-wrapper {
+    width: 80%;
+  }
+}

@@ -1,0 +1,26 @@
+.timeAndDate {
+  color: $color-white;
+  font-size: 1.4rem;
+  &-wrapper {
+    position: absolute;
+
+    top: 3rem;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+}
+
+@include respond(tab-pot) {
+  .timeAndDate {
+    font-size: 2rem;
+    &-wrapper {
+      margin: 0.5rem;
+      position: absolute;
+      width: 100%;
+      top: 7rem;
+      // left: 0rem;
+      text-align: center;
+      // transform: translate(0, 0);
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.MindMeloWebapp-sidemenu {
+  button {
+    font-size: 3rem;
+    color: $color-white;
+    display: flex;
+
+    align-items: center;
+    padding: 1rem 0rem;
+  }
+  position: fixed;
+  display: flex;
+
+  align-items: end;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  right: 2rem;
+  gap: 2rem;
+}
+.sidemenu-btn {
+  opacity: 0.4;
+  transition: 200ms;
+}
+
+.sidemenu-btn:hover {
+  opacity: 1;
+  scale: 1.1;
+}
+
+.sidemenu-btn:hover .sidemenu-btn-name {
+  opacity: 1;
+  display: inline;
+}
+.sidemenu-btn-name,
+.sidemenu-btn-name-mobile {
+  opacity: 0;
+  display: none;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  background-color: $color-white;
+  color: $color-black;
+  padding: 0.5rem 1rem;
+  border-radius: 0.8rem;
+}
+
+.active {
+  opacity: 1;
+}
+
+@include respond(tab-pot) {
+  .MindMeloWebapp-sidemenu {
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 3rem;
+    width: 100%;
+    height: fit-content;
+    padding: 1rem 0rem;
+    position: fixed;
+    top: auto;
+    right: auto;
+    bottom: -5.5rem;
+    left: auto;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+
+    button {
+      font-size: 4.2rem;
+      color: $color-black;
+      padding: 1rem 0rem;
+    }
+  }
+  .sidemenu-btn {
+    opacity: 0.4;
+    transition: 200ms;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidemenu-btn:hover .sidemenu-btn-name {
+    display: none;
+  }
+  .sidemenu-btn-name-mobile {
+    opacity: 1;
+    display: inline;
+    font-size: 1.4rem;
+    margin-right: 0rem;
+    background-color: transparent;
+    color: $color-black;
+    padding: 0.5rem 0rem;
+    border-radius: 0.8rem;
+  }
+  .hide {
+    display: none;
+  }
+}

@@ -1,0 +1,67 @@
+// Media Query Manager
+/*
+0 - 600px: Phone
+600px - 900px: Tablet Potrait
+900px - 1200px: Tablet Landscape
+1200px - 1800px: Where Normal styles appply
+1800px - beyond: Large Desktop
+*/
+
+// $breakpoint argument choices:
+/*
+
+- small-phone
+- phone
+- tab-pot
+- tab-land
+- big-desk 
+
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint==small-phone {
+    @media only screen and (max-width: 23.4em) {
+      // 375px/16 = 23.4em
+      @content;
+    }
+  }
+
+  @if $breakpoint==phone {
+    @media only screen and (max-width: 37.5em) {
+      // 600px/16 = 37.5em
+
+      @content;
+    }
+  }
+
+  @if $breakpoint==phone-med {
+    @media only screen and (max-width: 48em) {
+      // 768px/16 = 48em
+      @content;
+    }
+  }
+
+  @if $breakpoint==tab-pot {
+    @media only screen and (max-width: 62em) {
+      // 992px/16 = 62em
+
+      @content;
+    }
+  }
+
+  @if $breakpoint==tab-land {
+    @media only screen and (max-width: 75em) {
+      // 1200px/16 = 75em
+
+      @content;
+    }
+  }
+
+  @if $breakpoint==big-desk {
+    @media only screen and (min-width: 112.5em) {
+      // 1800px/16 = 112.5em
+
+      @content;
+    }
+  }
+}

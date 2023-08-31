@@ -1,0 +1,24 @@
+/* Footer.css */
+.footer {
+  background-color: $color-black;
+  color: $color-white;
+  padding: 3rem 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer-text {
+  margin: 0;
+}
+.footer-attribution {
+  font-size: 1.6rem;
+  a {
+    color: $color-white;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Unbounded:wght@600&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; //1rem = 10px; 10px/16px% = 62.5
+  background: #fafafa;
+  &::-webkit-scrollbar {
+    margin: 0.5rem;
+    padding: 1rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #ccc;
+    border-radius: 0.5rem;
+    overflow-y: hidden;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 0.5rem;
+    background-color: rgb(80, 80, 80);
+  }
+  @include respond(big-desk) {
+    //width < 1200px ?
+    font-size: 75%; // 1rem = 12px; 9/16% = 75%
+  }
+
+  @include respond(tab-land) {
+    //width < 1200px ?
+    font-size: 56.25%; // 1rem = 9px; 9/16% = 56.25%
+  }
+
+  @include respond(tab-pot) {
+    //width < 992px ?
+    font-size: 50%; // 1rem = 8px; 8/16% = 50%
+  }
+
+  @include respond(phone) {
+    //width < 600px ?
+    font-size: 48%; // 1rem = 7.6px; 7.6/16% = 48%
+  }
+  @include respond(small-phone) {
+    //width < 600px ?
+    font-size: 43.75%; // 1rem = 7px; 7/16% = 43.75%
+  }
+}
+
+.row {
+  max-width: 124rem;
+  margin: 0 auto;
+
+  @include respond(tab-land) {
+    max-width: 100rem;
+  }
+
+  @include respond(phone-med) {
+    max-width: 70rem;
+  }
+
+  @include respond(phone) {
+    max-width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+}
+
+section {
+  padding: 8rem 0;
+
+  @include respond(phone-med) {
+    padding: 6rem 0;
+  }
+}
+
+a {
+  text-decoration: none;
+}

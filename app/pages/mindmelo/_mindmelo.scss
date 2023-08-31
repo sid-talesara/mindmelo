@@ -1,0 +1,97 @@
+// Mindmelo page
+.Mindmelo-wrapper {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.Mindmelo-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(360deg, #000 -50%, rgba(0, 0, 0, 0) 110%);
+}
+@include respond(tab-pot) {
+  .Mindmelo-container {
+    height: auto;
+    padding: 13rem 0rem;
+  }
+}
+// about component
+.about {
+  &-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding: 1rem 0;
+  }
+
+  &-desc {
+    text-align: justify;
+    font-size: 1.2rem;
+  }
+}
+
+// music model info component
+.musicInfo {
+  &-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding: 1rem 0;
+  }
+  &-owner {
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+  }
+  &-desc {
+    text-align: justify;
+    font-size: 1.2rem;
+  }
+  &-tags {
+    display: flex;
+    gap: 1rem;
+    color: $color-white;
+    padding: 1rem 0;
+  }
+  &-tag {
+    background-color: $color-black;
+    padding: 0.8rem 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  &-embed-video {
+    margin: 1rem 0rem;
+    width: 100%;
+  }
+}
+
+// Quote component
+.quote {
+  padding: 1rem;
+  &-wrapper {
+    width: 60rem;
+    text-align: center;
+    color: $color-white;
+    font-size: 1.2rem;
+    position: absolute;
+    font-weight: 200;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 2rem;
+  }
+  &-loader {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+@include respond(tab-pot) {
+  .quote {
+    &-wrapper {
+      display: none;
+    }
+  }
+}

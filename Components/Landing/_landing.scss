@@ -1,0 +1,193 @@
+// Hero Component
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #fff 0%,
+    rgba(240, 240, 240, 0.5) 62.5%,
+    rgba(217, 217, 217, 0.2) 100%
+  );
+
+  &-wrapper {
+    background: url(../../public/graphics/hero-bg.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    // padding-top: 10rem;
+    padding: 15rem;
+    color: $color-black;
+    text-align: center;
+    &--heading {
+      font-size: 6.4rem;
+
+      font-weight: 700;
+    }
+    &--desc {
+      font-size: 2rem;
+
+      font-weight: 500;
+    }
+  }
+}
+
+@include respond(tab-pot) {
+  .hero {
+    height: 100vh;
+    background: linear-gradient(
+      180deg,
+      #fff 0%,
+      rgba(240, 240, 240, 0.5) 62.5%,
+      rgba(217, 217, 217, 0.2) 100%
+    );
+
+    &-details {
+      gap: 3rem;
+      padding: 3rem;
+      padding-top: 10rem;
+      color: $color-black;
+      text-align: center;
+      &--heading {
+        font-size: 4.2rem;
+      }
+    }
+  }
+}
+
+// CTA Card Component
+.cta-card {
+  margin: 4rem 0rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  &-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  &--heading {
+    width: 90rem;
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  &--desc {
+    width: 90rem;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+}
+
+@include respond(tab-pot) {
+  .cta-card {
+    margin: 4rem 0rem;
+    padding: 2.4rem;
+
+    &--heading {
+      width: auto;
+      font-size: 3.6rem;
+    }
+    &--desc {
+      width: auto;
+      font-size: 2rem;
+    }
+  }
+}
+
+// Infocard Component
+.infocard {
+  width: 92rem;
+  height: 30rem;
+  border-radius: 2.4rem;
+  background: $color-white;
+  box-shadow: 2px -1px 8px 1px rgba(0, 0, 0, 0.13);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  color: $color-black;
+  &-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.6rem;
+    margin: auto;
+  }
+
+  &-img {
+    &-wrapper {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &-details {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 60%;
+    gap: 2.4rem;
+    &--heading {
+      font-size: 3.6rem;
+      font-weight: 700;
+    }
+    &--desc {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@include respond(tab-pot) {
+  .infocard {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 3rem;
+
+    &-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3.6rem;
+      margin: auto;
+    }
+
+    &-img {
+      width: 10rem;
+      height: 10rem;
+      &-wrapper {
+        width: 100%;
+        padding: 3rem 0rem;
+      }
+    }
+    &-details {
+      width: 100%;
+
+      &--desc {
+        font-size: 2rem;
+      }
+    }
+  }
+}
