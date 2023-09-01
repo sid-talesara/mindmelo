@@ -49,7 +49,19 @@ const Hero = () => {
             you design your perfect focus zone, where nature's tranquility fuels
             your productivity journey.
           </motion.p>
-          <TryForFree childrenVariant={childrenVariant} />
+          <div className="hero-btns-grp">
+            <TryForFree childrenVariant={childrenVariant} />
+            <a
+              href="https://www.producthunt.com/posts/mindmelo?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-mindmelo"
+              target="_blank"
+            >
+              <img
+                className="product-hunt--btn"
+                src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=412366&theme=light"
+                alt="MindMelo - Create&#0032;you&#0032;peaceful&#0032;zone | Product Hunt"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </motion.div>
