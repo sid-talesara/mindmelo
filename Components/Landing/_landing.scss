@@ -37,6 +37,10 @@
       font-weight: 500;
     }
   }
+  &-btns-grp {
+    display: flex;
+    gap: 2rem;
+  }
 }
 
 @include respond(tab-pot) {
