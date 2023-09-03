@@ -23,8 +23,7 @@ export const MusicData = [
     name: "Guitar",
     showModel: false,
     icon: FaGuitar,
-    audio:
-      "https://res.cloudinary.com/dq4q2fbzq/video/upload/v1692442445/uwide6qixeilv6se3emf.mp3",
+    audio: "https://audio.jukehost.co.uk/m25Z44KPvZ3U9UcEjcBRAPma7lWhQNTg",
     id: uuidv4(),
     isActive: false,
     volume: 50,
@@ -48,8 +47,7 @@ export const MusicData = [
     name: "Birds",
     showModel: false,
     icon: GiHummingbird,
-    audio:
-      "https://res.cloudinary.com/dq4q2fbzq/video/upload/v1692588931/birds.mp3",
+    audio: "https://audio.jukehost.co.uk/UvMxtmnn8OYsavynsv4KB2LL16qb6FK4",
     id: uuidv4(),
     isActive: false,
     volume: 50,
@@ -71,8 +69,7 @@ export const MusicData = [
     name: "Night",
     showModel: false,
     icon: BsFillMoonStarsFill,
-    audio:
-      "https://res.cloudinary.com/dq4q2fbzq/video/upload/v1692442450/kdizumdvmjbrszcczj33.mp3",
+    audio: "https://audio.jukehost.co.uk/FGa4qQ7T1FzODrXPbvogwPxbhBRE2ocz",
     id: uuidv4(),
     isActive: false,
     volume: 50,
@@ -94,8 +91,7 @@ export const MusicData = [
     name: "flute",
     showModel: false,
     icon: GiFlute,
-    audio:
-      "https://res.cloudinary.com/dq4q2fbzq/video/upload/v1692442457/flute.mp3",
+    audio: "https://audio.jukehost.co.uk/A07jM3tQFbjplbCRiTW2moCG8fjJbt3p",
     id: uuidv4(),
     isActive: false,
     volume: 50,
@@ -118,8 +114,7 @@ export const MusicData = [
     name: "Train",
     showModel: false,
     icon: BsFillTrainFrontFill,
-    audio:
-      "https://res.cloudinary.com/dq4q2fbzq/video/upload/v1692442422/wjvad0zeezjeltgilfso.mp3",
+    audio: "https://audio.jukehost.co.uk/aVFDAk6BtIvlrnhPpOgVzcb6EUbJToPg",
     id: uuidv4(),
     isActive: false,
     volume: 50,
@@ -141,8 +136,7 @@ export const MusicData = [
     name: "Study",
     showModel: false,
     icon: ImBooks,
-    audio:
-      "https://res.cloudinary.com/dq4q2fbzq/video/upload/v1692442448/gzunglnguql05gtenbhe.mp3",
+    audio: "https://audio.jukehost.co.uk/qgik8KHE3HyWR70SR0qp4ceB2RojPURP",
     id: uuidv4(),
     isActive: false,
     volume: 50,
@@ -164,8 +158,7 @@ export const MusicData = [
     name: "Code",
     showModel: false,
     icon: BsCodeSlash,
-    audio:
-      "https://res.cloudinary.com/dq4q2fbzq/video/upload/v1692442432/phfqvm8uodt0iry9icnp.mp3",
+    audio: "https://audio.jukehost.co.uk/E72lsUN1PWPT5tqeFiqPXuOCnK1tkoOA",
     id: uuidv4(),
     isActive: false,
     volume: 50,
@@ -187,8 +180,7 @@ export const MusicData = [
     name: "Meditation",
     showModel: false,
     icon: GiMeditation,
-    audio:
-      "https://res.cloudinary.com/dq4q2fbzq/video/upload/v1692442460/meditation.mp3",
+    audio: "https://audio.jukehost.co.uk/DvByCuwKC72W8ZapBHuGDkm9y6J9pCyB",
     id: uuidv4(),
     isActive: false,
     volume: 50,
@@ -211,8 +203,7 @@ export const MusicData = [
     name: "Singing Bowl",
     showModel: false,
     icon: TbBowl,
-    audio:
-      "https://res.cloudinary.com/dq4q2fbzq/video/upload/v1692442442/ucmeruedr8lqxx3wg1ry.mp3",
+    audio: "https://audio.jukehost.co.uk/s34TiNT7JqLR7cwXegJiLzW4Rsfog3Us",
     id: uuidv4(),
     isActive: false,
     volume: 50,
@@ -234,8 +225,7 @@ export const MusicData = [
     name: "cafe",
     showModel: false,
     icon: MdLocalCafe,
-    audio:
-      "https://res.cloudinary.com/dq4q2fbzq/video/upload/v1692451114/cafe.mp3",
+    audio: "https://audio.jukehost.co.uk/hpC5UgrJrxj2xgoBOGW2GG89dp8JIClm",
     id: uuidv4(),
     isActive: false,
     volume: 50,
@@ -258,8 +248,7 @@ export const MusicData = [
     name: "Waves",
     showModel: false,
     icon: GiBigWave,
-    audio:
-      "https://res.cloudinary.com/dq4q2fbzq/video/upload/v1692442458/waves.mp3",
+    audio: "https://audio.jukehost.co.uk/reVRmG7JjmuSSOW6kfEkDhx7T16cACMO",
     id: uuidv4(),
     isActive: false,
     volume: 50,
@@ -275,8 +264,7 @@ export const MusicData = [
     name: "Campfire",
     showModel: false,
     icon: GiCampfire,
-    audio:
-      "https://res.cloudinary.com/dq4q2fbzq/video/upload/v1692442447/s8hzz4botuw5dukinkmx.mp3",
+    audio: "https://audio.jukehost.co.uk/dUEYyVQV11Pi3NR6Xb7FWszb21BK51kx",
     id: uuidv4(),
     isActive: false,
     volume: 50,
@@ -292,8 +280,7 @@ export const MusicData = [
     name: "Rain",
     showModel: false,
     icon: BsFillCloudRainFill,
-    audio:
-      "https://res.cloudinary.com/dq4q2fbzq/video/upload/v1692442454/k0rnzvaj21xnlhgr6qau.mp3",
+    audio: "https://audio.jukehost.co.uk/wJ12mX5dSV0FbMLJ9hDHz8gzkal62VUB",
     id: uuidv4(),
     isActive: false,
     volume: 50,
@@ -309,8 +296,7 @@ export const MusicData = [
     name: "Forest",
     showModel: false,
     icon: MdForest,
-    audio:
-      "https://res.cloudinary.com/dq4q2fbzq/video/upload/v1692450878/zdxa9jk1crcou1qkcake.mp3",
+    audio: "https://audio.jukehost.co.uk/VHtvaULVzK9AIKwjbGbCPImin1RWtjqp",
     id: uuidv4(),
     isActive: false,
     volume: 50,
@@ -333,8 +319,7 @@ export const MusicData = [
     name: "Thunderstrom",
     showModel: false,
     icon: IoIosThunderstorm,
-    audio:
-      "https://res.cloudinary.com/dq4q2fbzq/video/upload/v1692442431/qaayl28ayvy743rin8kn.mp3",
+    audio: "https://audio.jukehost.co.uk/HipZKQnHTUAMwD6a807YCzZKgIiZFBoi",
     id: uuidv4(),
     isActive: false,
     volume: 50,
