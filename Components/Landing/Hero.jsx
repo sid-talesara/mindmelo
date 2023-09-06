@@ -51,7 +51,8 @@ const Hero = () => {
           </motion.p>
           <div className="hero-btns-grp">
             <TryForFree childrenVariant={childrenVariant} />
-            <a
+            <motion.a
+              variants={childrenVariant}
               href="https://www.producthunt.com/posts/mindmelo?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-mindmelo"
               target="_blank"
             >
@@ -60,7 +61,7 @@ const Hero = () => {
                 src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=412366&theme=light"
                 alt="MindMelo - Create&#0032;you&#0032;peaceful&#0032;zone | Product Hunt"
               />
-            </a>
+            </motion.a>
           </div>
         </div>
       </div>
