@@ -63,6 +63,12 @@
         font-size: 4.2rem;
       }
     }
+    &-btns-grp {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
   }
 }
 
